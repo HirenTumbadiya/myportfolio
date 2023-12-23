@@ -4,17 +4,32 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  padding: 20px;
+  background-color: #1C1F25;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+}
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.7;
   }
 }
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +39,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    /* cursor: none; */
+}
+
+.crazy-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f00 20%, transparent 80%);
+  animation: flicker 1s infinite alternate;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+  z-index: 1000;
+}
+
+/* Optional: Add hover effects */
+.crazy-cursor:hover {
+  transform: scale(1.5);
+  background: radial-gradient(circle, #ff4500 20%, transparent 80%);
 }
