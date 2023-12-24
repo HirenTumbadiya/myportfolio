@@ -13,11 +13,11 @@ const Footer = () => {
             <Image src="/signature.png" alt="Your Logo" width={400} height={100} />
           </div>
           <div className=" text-end">
-            <p className=" text-2xl font-bold mb-2">
+            <p className="text-2xl font-bold mb-2">
               Looking for a skilled developer?
             </p>
             <p>
-              Let's bring your ideas to life! Contact us for web development
+              Let&apos;s bring your ideas to life! Contact us for web development
               services.
             </p>
             <button className="text-white border px-6 py-4 rounded-xl mt-4 hover:bg-white hover:border-white hover:text-black">
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="items-center text-center">
           <p>
-            &copy; Copyright 2023 - <span>Hiren Tumbadiya</span>
+            &copy; Copyright 2023 - Hiren Tumbadiya
           </p>
         </div>
       </div>
