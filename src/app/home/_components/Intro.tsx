@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 const Intro: React.FC = ({
 }) => {
   return (
-    <section className="flex items-center justify-between h-screen px-40">
+    <section className="md:flex items-center justify-between md:h-screen md:px-40">
       <div className="flex-shrink-0">
         <Image
           src="/user.png"
@@ -16,7 +16,7 @@ const Intro: React.FC = ({
         />
       </div>
       <div className="max-w-md">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className=" text-2xl md:text-4xl font-bold text-white mb-4">
           <Typewriter
                       options={{
                         strings: ["I'm Hiren Tumbadiya"],

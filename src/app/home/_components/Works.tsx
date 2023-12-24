@@ -14,7 +14,7 @@ const Works = () => {
   ];
 
   return (
-    <div className="mt-8 px-40">
+    <div className="mt-8 md:px-40">
       <h2 className="text-4xl font-bold text-white mb-4">Works</h2>
       <div className="grid grid-cols-2 gap-6">
         {worksData.map((work, index) => (

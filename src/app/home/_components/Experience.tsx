@@ -46,9 +46,9 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <div className="mt-8 px-40">
+    <div className="mt-8 md:px-40">
       <h2 className="text-4xl font-bold text-white mb-4">Experience</h2>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {experienceData.map((item, index) => (
           <ExperienceItem key={index} {...item} />
         ))}
