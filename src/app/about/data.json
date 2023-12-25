@@ -1,0 +1,25 @@
+
+{
+    "name": "Hiren Tumbadiya",
+    "role": "Passionate Full Stack Developer",
+    "introduction": "Welcome to my portfolio! I'm a seasoned Full Stack Developer with a rich background in front-end and back-end technologies. Over the years, I've honed my skills in crafting exceptional user experiences using a variety of frameworks and tools.",
+    "experience": [
+      "My journey started with React.js, where I developed a deep understanding of building dynamic and interactive user interfaces. The versatility of React led me to explore mobile app development with React Native, and I'm proud to have successfully published apps on both the App Store and Google Play Store.",
+      "In the realm of front-end design, I've seamlessly integrated the power of Bootstrap and the flexibility of Tailwind CSS to create visually stunning and responsive applications. The combination of these tools has allowed me to deliver seamless user experiences across various devices and screen sizes.",
+      "On the back-end, I've ventured into both Go (Golang) and Node.js, leveraging their strengths to build scalable and performant server-side solutions. My experience extends to working with databases, and I've particularly excelled in MongoDB, ensuring robust data storage and retrieval mechanisms for applications."
+    ],
+    "expertise": [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Redux",
+      "Go (Golang)",
+      "Node.js",
+      "MongoDB"
+    ],
+    "github": "https://github.com/hirentumbadiya",
+    "linkedin": "https://linkedin.com/in/hirentumbadiya"
+  }
+  

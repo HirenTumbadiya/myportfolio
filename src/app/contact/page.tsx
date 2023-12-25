@@ -13,7 +13,7 @@ const Page = () => {
             <span className="font-semibold">Address:</span> 123 Main Street, City, Country
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="font-semibold">Email:</span> info@example.com
+            <span className="font-semibold">Email:</span>
           </p>
 
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Connect With Us</h2>
