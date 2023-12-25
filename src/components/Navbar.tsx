@@ -50,22 +50,22 @@ const Navbar: React.FC = () => {
         >
  <div className={`text-center flex gap-5 text-white`}>
               <Link href="/">
-                <p className="hover:underline hover:text-gray-300 text-xl font-semibold">
+                <p className={`hover:underline hover:animate-bounce hover:text-gray-300 text-xl font-semibold`}>
                   Home
                 </p>
               </Link>
               <Link href="/about">
-                <p className="hover:underline hover:text-gray-300 text-xl font-semibold">
+                <p className="hover:underline hover:animate-bounce hover:text-gray-300 text-xl font-semibold">
                   About
                 </p>
               </Link>
               <Link href="/projects">
-                <p className="hover:underline hover:text-gray-300 text-xl font-semibold">
+                <p className="hover:underline hover:animate-bounce hover:text-gray-300 text-xl font-semibold">
                   Projects
                 </p>
               </Link>
               <Link href="/contact">
-                <p className="hover:underline hover:text-gray-300 text-xl font-semibold">
+                <p className="hover:underline hover:animate-bounce hover:text-gray-300 text-xl font-semibold">
                   Contact
                 </p>
               </Link>

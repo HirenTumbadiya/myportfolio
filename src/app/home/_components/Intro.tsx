@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { ArrowRight } from "react-bootstrap-icons";
 import Typewriter from "typewriter-effect";
 
 const Intro: React.FC = ({
@@ -35,6 +37,14 @@ const Intro: React.FC = ({
         <p className="text-lg text-gray-300">
           Passionate frontend developer with a love for technology.
         </p>
+        <Link href="/about">
+          <p className="text-white border flex justify-between items-center w-2/5 px-6 py-4 rounded-xl mt-4 hover:bg-white hover:border-white hover:text-black">
+            About Me
+            <div className=" animate-bounce">
+            <ArrowRight />
+            </div>
+          </p>
+        </Link>
       </div>
     </section>
   );

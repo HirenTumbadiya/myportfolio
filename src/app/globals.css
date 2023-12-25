@@ -39,24 +39,45 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    /* cursor: none; */
+    cursor: none;
 }
-
 .crazy-cursor {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: radial-gradient(circle, #f00 20%, transparent 80%);
-  animation: flicker 1s infinite alternate;
+  background: radial-gradient(circle, #ffffff 5%, transparent 70%);
+  animation: twinkle 1.5s infinite alternate, moveUp 2s infinite alternate;
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: all 0.1s ease-out;
   z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.3);
+  border: 2px solid #00ff00;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Optional: Add hover effects */
 .crazy-cursor:hover {
   transform: scale(1.5);
-  background: radial-gradient(circle, #ff4500 20%, transparent 80%);
+  background: radial-gradient(circle, #ff4500 20%, #ff9100 40%, #ffec8b 80%, transparent 100%);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.5), 0 0 60px rgba(255, 0, 0, 0.3);
+  border: 2px solid #ff0000;
 }

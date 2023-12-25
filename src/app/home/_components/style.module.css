@@ -1,0 +1,23 @@
+.scrollContainer {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .projectCard {
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .scrollButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .scrollLeft, .scrollRight {
+    cursor: pointer;
+  }
+  
+  /* Add additional styling as needed */
+  

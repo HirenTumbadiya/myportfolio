@@ -5,6 +5,7 @@ import CrazyCursor from "@/components/CrazyCursor";
 import Navbar from "@/components/Navbar";
 import SocialLinks from "@/components/SocialLinks";
 import Footer from "@/components/Footer";
+import HLoader from "@/components/loaders/Hloader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <CrazyCursor /> */}
+        <CrazyCursor />
         <Navbar />
         <SocialLinks />
         {children}
